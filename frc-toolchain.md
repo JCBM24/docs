@@ -12,7 +12,7 @@ Change the desired PPA relase from xenial to vivid as show below.
 
 ![PPA Release](frc-toolchain/edit_ppa_release.png)
 
-The vivid version of the toolchain depends on a older version of libisl as discussed [here](https://www.chiefdelphi.com/forums/showthread.php?t=141395). The link to the libisl dep can be found [here](https://launchpad.net/ubuntu/vivid/+package/libisl13), download the amd64 version and install.
+The vivid version of the toolchain depends on a older version of libisl as discussed [here](https://www.chiefdelphi.com/forums/showthread.php?t=141395). The link to the libisl deb package can be found [here](https://launchpad.net/ubuntu/vivid/+package/libisl13), download the amd64 version and install.
 
 At the command line run:
 
