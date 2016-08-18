@@ -53,13 +53,36 @@ See this python.org tutorial for an introduction to basic data types: [An Inform
 Stop when you reach section 3.2, "First Steps Towards Programming".
 
 #### Examples
+
 - [`numbers.py`](basic/numbers.py)
 - [`variables.py`](basic/variables.py)
 - [`strings.py`](basic/strings.py)
+
+#### References
+
+- [`len()`](https://docs.python.org/3.5/library/functions.html#len)
+- [`str.format()`](https://docs.python.org/3.5/library/stdtypes.html#str.format)
 
 ### First Steps Towards Programming
 
 Generate the first few numbers of the Fibonacci series by following [section 3.2](https://docs.python.org/3/tutorial/introduction.html#first-steps-towards-programming) of the python.org tutorial.
 
 #### Example
+
 - [`fibo.py`](basic/fibo.py)
+
+#### References
+
+- [`while`](https://docs.python.org/3.5/reference/compound_stmts.html#while)
+
+### More Control Flow Statements
+
+Continue the python.org tutorial on [more control flow tools](https://docs.python.org/3/tutorial/controlflow.html).
+
+Stop when you reach section 4.6, "Defining Functions".
+
+### Defining Functions
+
+Continue the python.org tutorial on [defining functions](https://docs.python.org/3/tutorial/controlflow.html#defining-functions).
+
+Stop when you reach section 4.7, "More on Defining Functions".
