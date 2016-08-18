@@ -94,6 +94,7 @@ This will get you up and running with OpenCV and C++ on a development laptop. Yo
 #### References
 
 - [OpenCV C++ API](http://docs.opencv.org/3.1.0/#gsc.tab=0)
+- [`cv::Mat`](http://docs.opencv.org/3.1.0/d3/d63/classcv_1_1Mat.html#gsc.tab=0)
 - [`cv::imread()`](http://docs.opencv.org/3.1.0/d4/da8/group__imgcodecs.html#ga288b8b3da0892bd651fce07b3bbd3a56)
 - [`cv::imshow()`](http://docs.opencv.org/3.1.0/d7/dfc/group__highgui.html#ga453d42fe4cb60e5723281a89973ee563)
 - [`cv::waitKey()`](http://docs.opencv.org/3.1.0/d7/dfc/group__highgui.html#ga5628525ad33f52eab17feebcfba38bd7)
