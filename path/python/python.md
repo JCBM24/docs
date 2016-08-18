@@ -1,4 +1,4 @@
-# Exercises
+# Python Learning Path
 
 ## Basic
 
@@ -55,6 +55,7 @@ Stop when you reach section 3.2, "First Steps Towards Programming".
 #### Examples
 - [`numbers.py`](basic/numbers.py)
 - [`variables.py`](basic/variables.py)
+- [`strings.py`](basic/strings.py)
 
 ### First Steps Towards Programming
 
