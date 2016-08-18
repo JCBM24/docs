@@ -1,7 +1,7 @@
 # Set up basic variables:
 CC = clang
 CFLAGS = -c -Wall -std=c++11 -g
-LDFLAGS = -lc++
+LDFLAGS = -lstdc++
 
 # List of sources:
 SOURCES = show_img.cpp
