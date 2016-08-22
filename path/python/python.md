@@ -1,5 +1,7 @@
 # Python Learning Path
 
+[Codecademy](https://www.codecademy.com) comes strongly recommended by fellow Stryke Force developers and should be where you start learning the Python programming language.
+
 ## Basic
 
 ### Set up a Python development environment
