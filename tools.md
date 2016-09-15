@@ -60,34 +60,44 @@ The procedure here was tested on Windows 10\. Nevertheless, it should also work 
 
 #### Mac OS X
 
-1. Install [Homebrew](http://brew.sh).
+Perform the following steps in a Terminal window.
+
+1. Install [Homebrew](http://brew.sh) according to the instructions on its home page.
 2. Install Python 3
 
   ```sh
   brew install python3
   ```
 
-3. Install [Cuda](https://developer.nvidia.com/cuda-downloads) and edit `$PATH` to include development tools.
+3. Install [Cuda](https://developer.nvidia.com/cuda-downloads) and edit `$PATH` to include development tools. You only need to have the Nvidia bin directory in your $PATH during the OpenCV installation step below.
 
   ```sh
   brew cask install cuda
   export PATH=/Developer/NVIDIA/CUDA-7.5/bin:$PATH
   ```
 
-4. Install OpenCV
+4. Install additional OpenCV prerequisites.
+
+  ```sh
+  brew tap homebrew/python
+  brew install homebrew/python/numpy
+  brew install cmake pkg-config jpeg libpng libtiff eigen openexr qt5 tbb
+  ```
+
+5. Install OpenCV
 
   ```sh
   brew tap homebrew/science
   brew install opencv3 --with-contrib --with-cuda --with-ffmpeg --with-tbb --with-qt5 --c++11 --with-python3
   ```
 
-5. Show Python 3 how to find bindings.
+6. Show Python 3 how to find bindings. This assumes Python 3.5, adjust the paths as appropriate for the version you installed above.
 
   ```sh
   $ echo /usr/local/opt/opencv3/lib/python3.5/site-packages >> /usr/local/lib/python3.5/site-packages/opencv3.pth
   ```
 
-6. Check installation
+7. Check installation
 
   ```
   python
