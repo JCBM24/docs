@@ -1,10 +1,19 @@
 #!/usr/bin/env python3
 
+import subprocess
 import time
 import cv2
 
+DEVICE = 0
+EXPOSURE = 150
+
+# set exposure
+dev = "video{}".format(DEVICE)
+subprocess.run(["uvcdynctrl", "-d", dev, "-s", "Exposure, Auto", "1"])
+subprocess.run(["uvcdynctrl", "-d", dev, "-s", "Exposure (Absolute)", str(EXPOSURE)])
+
 # device 0 is the first camera found
-camera = cv2.VideoCapture(0)
+camera = cv2.VideoCapture(DEVICE)
 
 while True:
     # capture one frame
