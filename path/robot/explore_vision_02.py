@@ -24,16 +24,17 @@ while True:
         break
 
     # manipulate the frame
-    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-    blurred = cv2.GaussianBlur(gray, (15, 15), 5)
-    _, thresholded = cv2.threshold(blurred, 90, 255, cv2.THRESH_BINARY)
+    hsv_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
+    hsv_lower = (157 // 2 - 10, 100, 100)
+    hsv_upper = (157 // 2 + 10, 255, 255)
+    inrange_mask = cv2.inRange(hsv_frame, hsv_lower, hsv_upper)
 
-    # display the frame
-    cv2.imshow('Processed', thresholded)
+    cv2.imshow('Processed', inrange_mask)
     time.sleep(0.02)
 
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
+
 
 # When everything done, release the capture
 camera.release()
